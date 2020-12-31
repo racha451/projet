@@ -8,7 +8,7 @@
     android:background="#fff"
     android:orientation="vertical"
     android:padding="50dp"
-    tools:context=".presentation.main.MainActivity">
+    tools:context=".presentation.main.SignupActivity">
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -30,39 +30,49 @@
 
 
         <EditText
-            android:id="@+id/email_btn"
+            android:id="@+id/bt_username"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="0dp"
-            android:hint="Email"
+            android:layout_marginBottom="20dp"
+            android:hint="Username"
             android:orientation="vertical"
-            android:layout_marginTop="60dp"/>
+            android:layout_marginTop="5dp"/>
 
         <EditText
-            android:id="@+id/password_btn"
+            android:id="@+id/bt_email"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="Email"
+            android:orientation="vertical" />
 
+        <EditText
+            android:id="@+id/bt_password"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
             android:hint="Password"
             android:orientation="vertical" />
 
+
         <Button
-            android:id="@+id/btn_login1"
+            android:id="@+id/btn_register"
             android:layout_width="match_parent"
             android:layout_height="50dp"
 
-            android:layout_marginTop="0dp"
-            android:text="Login" />
-
-        <Button
-            android:id="@+id/btn_register1"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-
-            android:layout_marginTop="0dp"
+            android:layout_marginTop="5dp"
             android:text="Register" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:layout_marginTop="5dp"
+            android:text="Back to login" />
 
 
     </LinearLayout>

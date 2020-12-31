@@ -1,25 +1,27 @@
 package com.example.projet.data.local.models
+import androidx.room.Dao
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import com.example.projet.domain.entity.User
+import java.io.Serializable
+
+
 
 @Entity
-data class UserLocal(
-        @ColumnInfo(name = "email") val email: String)
+ class UserLocal : Serializable {
+        //declaration of user table columns
+        @PrimaryKey(autoGenerate = true)
 
-{
-        @PrimaryKey (autoGenerate = true) var uid: Int? = null
+        var id: Int = 0
 
-}
-fun User.toData() : UserLocal{
-        return UserLocal(
-        email =email)
-}
+       var email: String? = null
 
-fun UserLocal.toEntity() : User{
-        return User(
-                email =email
-        )
+        var username: String? = null
+
+
+
+        var password: String? = null
+
+
 }

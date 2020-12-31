@@ -1,25 +1,20 @@
 package com.example.projet.data.local.models
 
+import androidx.lifecycle.LiveData
 import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.Query
 
+
 @Dao
 interface DatabaseDao {
-    @Query("SELECT * FROM UserLocal")
-    fun getAll(): List<UserLocal>
-
-
-
-    @Query("SELECT * FROM userlocal WHERE email LIKE :email LIMIT 1")
-
-
-    fun findByName(email: String): UserLocal
-
     @Insert
-    fun insert(users: UserLocal)
+    fun insertUserData(userLocal: UserLocal)  //   query is written above for insert all details of user
 
-    @Delete
-    fun delete(user: UserLocal)
+    @Query("select * from UserLocal")
+    fun getDetails(): LiveData<List<UserLocal>> //   query is written above for fetching all details of user
+
+
+
 }
