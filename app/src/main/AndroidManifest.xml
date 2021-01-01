@@ -11,6 +11,10 @@
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
+
+
     <application
 
         android:allowBackup="true"
@@ -44,7 +48,7 @@
         </activity>
 
 
-        <activity android:name=".presentation.main.SingleCompany">
+        <activity android:name=".presentation.main.SingleTvShow">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

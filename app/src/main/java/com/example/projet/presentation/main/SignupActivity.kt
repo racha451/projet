@@ -26,7 +26,7 @@ class SignupActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_signup)
-        //calling view mdioel object
+        //calling view mdel object
         val userDetailsRepository = ViewModelProvider(this@SignupActivity).get(MainViewModel::class.java)
 
         btn_login.setOnClickListener {

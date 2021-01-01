@@ -13,13 +13,18 @@ const val API_KEY = "67a80710810611d36586dcc9328b2aa0"
 
     const val POSTER_BASE_URL = "https://image.tmdb.org/t/p/w342"
 
+
+
+const val FIRST_PAGE = 1
+const val POST_PER_PAGE = 10
+
 // https://api.themoviedb.org/3/movie/popular?api_key=6e63c2317fbe963d76c3bdc2b785f6d1&page=1
 // https://api.themoviedb.org/3/movie/299534?api_key=6e63c2317fbe963d76c3bdc2b785f6d1
 // https://image.tmdb.org/t/p/w342/1gkCUTbckMYjGam52H7qRyfuXS1.png
 
-    object CompanyDBClient {
+    object TvShowDBClient {
 
-        fun getClient(): CompanyDBInterface {
+        fun getClient(): TvShowDBInterface {
 
             val requestInterceptor = Interceptor { chain ->
                 // Interceptor take only one argument which is a lambda function so parenthesis can be omitted
@@ -50,7 +55,7 @@ const val API_KEY = "67a80710810611d36586dcc9328b2aa0"
                     .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                     .addConverterFactory(GsonConverterFactory.create())
                     .build()
-                    .create(CompanyDBInterface::class.java)
+                    .create(TvShowDBInterface::class.java)
 
         }
 }

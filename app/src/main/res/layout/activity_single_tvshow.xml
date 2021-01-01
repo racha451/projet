@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.projet.presentation.main.SingleCompany">
+    tools:context="com.example.projet.presentation.main.SingleTvShow">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -40,7 +40,7 @@
 
 
                 <ImageView
-                    android:id="@+id/iv_movie_poster"
+                    android:id="@+id/iv_tvshow_poster"
                     android:layout_width="match_parent"
                     android:layout_height="500dp"
                     android:layout_gravity="center"
@@ -54,15 +54,15 @@
                     android:layout_margin="8dp">
 
                     <TextView
-                        android:id="@+id/movie_title"
+
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Company"
+                        android:text="TvShow"
                         android:textStyle="bold"
                         android:textSize="18sp"/>
 
                     <TextView
-                        android:id="@+id/company_name"
+                        android:id="@+id/tvshow_name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="14sp"
@@ -71,7 +71,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Company Info"
+                        android:text="Tvshow Info"
                         android:layout_marginTop="15dp"
                         android:textSize="14sp"
                         android:textStyle="bold"/>
@@ -85,12 +85,12 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="2dp"
-                            android:text="Description: "
+                            android:text="Language: "
                             android:textSize="12sp"
                             android:textStyle="bold"/>
 
                         <TextView
-                            android:id="@+id/company_description"
+                            android:id="@+id/tvshow_langage"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="2dp"
@@ -107,12 +107,12 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="2dp"
-                            android:text="Company release headquarters: "
+                            android:text="Production countries: "
                             android:textSize="12sp"
                             android:textStyle="bold"/>
 
                         <TextView
-                            android:id="@+id/company_release_headquarters"
+                            android:id="@+id/tvshow_production_countries"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="2dp"
@@ -129,12 +129,12 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="2dp"
-                            android:text="Company country: "
+                            android:text="popularity: "
                             android:textSize="12sp"
                             android:textStyle="bold"/>
 
                         <TextView
-                            android:id="@+id/company_country"
+                            android:id="@+id/tvshow_popularity"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="2dp"
@@ -151,12 +151,12 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
-                        android:text="Company homePage: "
+                        android:text="Tvshow homePage: "
                         android:textSize="12sp"
                         android:textStyle="bold"/>
 
                     <TextView
-                        android:id="@+id/company_homepage"
+                        android:id="@+id/tvshow_homepage"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
