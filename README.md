@@ -30,7 +30,6 @@ Des modification ont été faites le 2 Janvier afin d'améliorer le design et d'
 ![image](https://user-images.githubusercontent.com/75430382/103449761-9215cf00-4c8b-11eb-9f47-31a3e76f3496.png)
 
 Accés aux infos des company
-![image](https://user-images.githubusercontent.com/75430382/103449798-eae56780-4c8b-11eb-963c-e98c68218614.png)
 
 
 
