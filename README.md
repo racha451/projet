@@ -22,3 +22,15 @@ Des modification ont été faites le 2 Janvier afin d'améliorer le design et d'
 
 ![image](https://user-images.githubusercontent.com/75430382/103449744-57139b80-4c8b-11eb-9053-32e586dc9b1b.png)
 
+![image](https://user-images.githubusercontent.com/75430382/103449755-85917680-4c8b-11eb-86de-cef8de1a7659.png)
+
+
+![image](https://user-images.githubusercontent.com/75430382/103449759-8de9b180-4c8b-11eb-8ece-8580b4c279c4.png)
+
+![image](https://user-images.githubusercontent.com/75430382/103449761-9215cf00-4c8b-11eb-9f47-31a3e76f3496.png)
+
+Accés aux infos des company
+![image](https://user-images.githubusercontent.com/75430382/103449798-eae56780-4c8b-11eb-963c-e98c68218614.png)
+
+
+
