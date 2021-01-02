@@ -5,7 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.projet.presentation.main.SingleTvShow">
+    tools:context="com.example.projet.presentation.main.SingleCompany">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -40,12 +40,12 @@
 
 
                 <ImageView
-                    android:id="@+id/iv_tvshow_poster"
-                    android:layout_width="match_parent"
-                    android:layout_height="500dp"
+                    android:id="@+id/iv_movie_poster"
+                    android:layout_width="wrap_content"
+                    android:layout_height="272dp"
                     android:layout_gravity="center"
                     android:scaleType="matrix"
-                    android:src="@drawable/poster_placeholder"/>
+                    android:src="@drawable/poster_placeholder" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -54,15 +54,15 @@
                     android:layout_margin="8dp">
 
                     <TextView
-
+                        android:id="@+id/movie_title"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="TvShow"
+                        android:text="Company"
                         android:textStyle="bold"
                         android:textSize="18sp"/>
 
                     <TextView
-                        android:id="@+id/tvshow_name"
+                        android:id="@+id/company_name"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textSize="14sp"
@@ -71,7 +71,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Tvshow Info"
+                        android:text="Company Info"
                         android:layout_marginTop="15dp"
                         android:textSize="14sp"
                         android:textStyle="bold"/>
@@ -85,12 +85,12 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="2dp"
-                            android:text="Language: "
+                            android:text="Description: "
                             android:textSize="12sp"
                             android:textStyle="bold"/>
 
                         <TextView
-                            android:id="@+id/tvshow_langage"
+                            android:id="@+id/company_description"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="2dp"
@@ -107,12 +107,12 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="2dp"
-                            android:text="Production countries: "
+                            android:text="Company release headquarters: "
                             android:textSize="12sp"
                             android:textStyle="bold"/>
 
                         <TextView
-                            android:id="@+id/tvshow_production_countries"
+                            android:id="@+id/company_release_headquarters"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="2dp"
@@ -129,12 +129,12 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="2dp"
-                            android:text="popularity: "
+                            android:text="Company country: "
                             android:textSize="12sp"
                             android:textStyle="bold"/>
 
                         <TextView
-                            android:id="@+id/tvshow_popularity"
+                            android:id="@+id/company_country"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="2dp"
@@ -147,22 +147,22 @@
                         android:orientation="horizontal">
 
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="2dp"
-                        android:text="Tvshow homePage: "
-                        android:textSize="12sp"
-                        android:textStyle="bold"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:text="Company homePage: "
+                            android:textSize="12sp"
+                            android:textStyle="bold"/>
 
-                    <TextView
-                        android:id="@+id/tvshow_homepage"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="2dp"
-                        android:textSize="12sp"/>
+                        <TextView
+                            android:id="@+id/company_homepage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:textSize="12sp"/>
 
-                </LinearLayout>
+                    </LinearLayout>
 
 
 

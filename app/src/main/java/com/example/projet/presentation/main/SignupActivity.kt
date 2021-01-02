@@ -26,7 +26,7 @@ class SignupActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_signup)
-        //calling view mdel object
+        //calling view mdioel object
         val userDetailsRepository = ViewModelProvider(this@SignupActivity).get(MainViewModel::class.java)
 
         btn_login.setOnClickListener {
@@ -58,7 +58,7 @@ class SignupActivity : AppCompatActivity() {
 
                         if (isExist) {
                             Toast.makeText(this@SignupActivity, " User Already Registered !!! ", Toast.LENGTH_LONG)
-                                .show()
+                                    .show()
 
                         } else {
 
@@ -69,7 +69,7 @@ class SignupActivity : AppCompatActivity() {
                             val userDatabase = AppDatabase
                             userDatabase.getDatabase(this@SignupActivity)?.databaseDao()?.insertUserData(user)
                             Toast.makeText(this@SignupActivity, " User  Registered Successfully", Toast.LENGTH_LONG)
-                                .show()
+                                    .show()
 
 
                         }

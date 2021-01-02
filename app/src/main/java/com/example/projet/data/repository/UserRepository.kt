@@ -10,8 +10,8 @@ import com.example.projet.data.local.models.UserLocal
 
 class UserRepository (application: Application){
 
-private var daoAccess: DatabaseDao? = null
-private var allData: LiveData<List<UserLocal>>? = null
+    private var daoAccess: DatabaseDao? = null
+    private var allData: LiveData<List<UserLocal>>? = null
 
     init {
         //fetching user database
@@ -22,23 +22,22 @@ private var allData: LiveData<List<UserLocal>>? = null
     }
 
 
-fun getAllData(): LiveData<List<UserLocal>>? {
-    return allData
-}
-
-fun insertData(data: UserLocal) {
-    daoAccess?.let { LoginInsertion(it).execute(data) }
-}
-
-private class LoginInsertion(private val daoAccess: DatabaseDao) :
-    AsyncTask<UserLocal, Void, Void>() {
-
-    override fun doInBackground(vararg data: UserLocal): Void? {
-
-        daoAccess.insertUserData(data[0])
-        return null
-
+    fun getAllData(): LiveData<List<UserLocal>>? {
+        return allData
     }
 
-}
-}
+    fun insertData(data: UserLocal) {
+        daoAccess?.let { LoginInsertion(it).execute(data) }
+    }
+
+    private class LoginInsertion(private val daoAccess: DatabaseDao) :
+            AsyncTask<UserLocal, Void, Void>() {
+
+        override fun doInBackground(vararg data: UserLocal): Void? {
+
+            daoAccess.insertUserData(data[0])
+            return null
+
+        }
+
+    }}

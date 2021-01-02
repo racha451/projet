@@ -1,78 +1,115 @@
 package com.example.projet.presentation.main
 
+
+import android.content.Intent
 import android.os.Bundle
-import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModel
-import androidx.lifecycle.ViewModelProvider
-import androidx.lifecycle.ViewModelProviders
-import androidx.recyclerview.widget.GridLayoutManager
 import com.example.projet.R
-import com.example.projet.ViewModel.MainActivityViewModel
-import com.example.projet.data.api.TvShowDBClient
-import com.example.projet.data.api.TvShowDBInterface
-import com.example.projet.data.repository.NetworkState
-import com.example.projet.data.repository.TvShowListRep
-import com.example.projet.data.vo.Adapter
-import kotlinx.android.synthetic.main.activity_api_list.*
+import kotlinx.android.synthetic.main.activity_api.*
 
 
 class ApiActivity : AppCompatActivity() {
 
-    private lateinit var viewModel: MainActivityViewModel
+    var isExist = false
 
-    lateinit var movieRepository: TvShowListRep
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_api_list)
+        setContentView(R.layout.activity_api)
 
-        val apiService : TvShowDBInterface = TvShowDBClient.getClient()
-
-        movieRepository = TvShowListRep(apiService)
-
-        viewModel = getViewModel()
-
-        val movieAdapter = Adapter(this)
-
-        val gridLayoutManager = GridLayoutManager(this, 3)
-
-        gridLayoutManager.spanSizeLookup = object : GridLayoutManager.SpanSizeLookup() {
-            override fun getSpanSize(position: Int): Int {
-                val viewType = movieAdapter.getItemViewType(position)
-                if (viewType == movieAdapter.MOVIE_VIEW_TYPE) return  1    // Movie_VIEW_TYPE will occupy 1 out of 3 span
-                else return 3                                              // NETWORK_VIEW_TYPE will occupy all 3 span
-            }
-        };
+        btn_api.setOnClickListener {
+            val intent = Intent(this, SingleCompany::class.java)
+            intent.putExtra("id",67)
+            this.startActivity(intent)
+        }
 
 
-        rv_movie_list.layoutManager = gridLayoutManager
-        rv_movie_list.setHasFixedSize(true)
-        rv_movie_list.adapter = movieAdapter
-
-        viewModel.moviePagedList.observe(this, Observer {
-            movieAdapter.submitList(it)
-        })
-
-        viewModel.networkState.observe(this, Observer {
-            progress_bar_popular.visibility = if (viewModel.listIsEmpty() && it == NetworkState.LOADING) View.VISIBLE else View.GONE
-            txt_error_popular.visibility = if (viewModel.listIsEmpty() && it == NetworkState.ERROR) View.VISIBLE else View.GONE
-
-            if (!viewModel.listIsEmpty()) {
-                movieAdapter.setNetworkState(it)
-            }
-        })
-    }
+        btn_api1.setOnClickListener {
+            val intent = Intent(this, SingleCompany::class.java)
+            intent.putExtra("id",670)
+            this.startActivity(intent)
+        }
+        btn_api2.setOnClickListener {
+            val intent = Intent(this, SingleCompany::class.java)
+            intent.putExtra("id",74)
+            this.startActivity(intent)
+        }
+        btn_api3.setOnClickListener {
+            val intent = Intent(this, SingleCompany::class.java)
+            intent.putExtra("id",80)
+            this.startActivity(intent)
+        }
 
 
-    private fun getViewModel(): MainActivityViewModel {
-        return ViewModelProviders.of(this, object : ViewModelProvider.Factory {
-            override fun <T : ViewModel?> create(modelClass: Class<T>): T {
-                @Suppress("UNCHECKED_CAST")
-                return MainActivityViewModel(movieRepository) as T
-            }
-        })[MainActivityViewModel::class.java]
-    }
+        btn_api4.setOnClickListener {
+            val intent = Intent(this, SingleCompany::class.java)
+            intent.putExtra("id",21)
+            this.startActivity(intent)
+        }
 
-}
+        btn_api5.setOnClickListener {
+            val intent = Intent(this, SingleCompany::class.java)
+            intent.putExtra("id",33)
+            this.startActivity(intent)
+        }
+
+
+        btn_api6.setOnClickListener {
+            val intent = Intent(this, SingleCompany::class.java)
+            intent.putExtra("id",34)
+            this.startActivity(intent)
+        }
+
+        btn_api7.setOnClickListener {
+            val intent = Intent(this, SingleCompany::class.java)
+            intent.putExtra("id",77)
+            this.startActivity(intent)
+
+        }
+
+        btn_api8.setOnClickListener {
+            val intent = Intent(this, SingleCompany::class.java)
+            intent.putExtra("id",78)
+            this.startActivity(intent)
+        }
+
+        btn_api9.setOnClickListener {
+            val intent = Intent(this, SingleCompany::class.java)
+            intent.putExtra("id",79)
+            this.startActivity(intent)
+        }
+
+        btn_api8.setOnClickListener {
+            val intent = Intent(this, SingleCompany::class.java)
+            intent.putExtra("id",70)
+            this.startActivity(intent)
+        }
+
+        btn_api9.setOnClickListener {
+            val intent = Intent(this, SingleCompany::class.java)
+            intent.putExtra("id",80)
+            this.startActivity(intent)
+        }
+
+        btn_api9.setOnClickListener {
+            val intent = Intent(this, SingleCompany::class.java)
+            intent.putExtra("id",45)
+            this.startActivity(intent)
+        }
+
+        btn_api10.setOnClickListener {
+            val intent = Intent(this, SingleCompany::class.java)
+            intent.putExtra("id",56)
+            this.startActivity(intent)
+
+
+
+
+        }
+        btn_api11.setOnClickListener {
+            val intent = Intent(this, SingleCompany::class.java)
+            intent.putExtra("id",300)
+            this.startActivity(intent)
+        }
+       }}
+

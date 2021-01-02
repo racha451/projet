@@ -1,6 +1,5 @@
-
-
 package com.example.projet.presentation.main
+
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -39,54 +38,54 @@ class MainActivity : AppCompatActivity() {
 
 
                 userRepository.getGetAllData()
-                    .observe(this, object : Observer<List<UserLocal>> {
-                        override fun onChanged(t: List<UserLocal>) {
-                            var userObject = t
+                        .observe(this, object : Observer<List<UserLocal>> {
+                            override fun onChanged(t: List<UserLocal>) {
+                                var userObject = t
 
-                            for (i in userObject.indices) {
-                                if (userObject[i].email?.equals(email_btn.text.toString())!!) {
+                                for (i in userObject.indices) {
+                                    if (userObject[i].email?.equals(email_btn.text.toString())!!) {
 
-                                    if (userObject[i].password?.equals(password_btn.text.toString())!!) {
+                                        if (userObject[i].password?.equals(password_btn.text.toString())!!) {
 
-                                        val intent =
-                                            Intent(this@MainActivity, ApiActivity::class.java)
-                                                .putExtra("UserDetials", userObject[i])
-                                        // start your next activity
-                                        startActivity(intent)
+                                            val intent =
+                                                    Intent(this@MainActivity, MiddleActivity::class.java)
+                                                            .putExtra("UserDetials", userObject[i])
+                                            // start your next activity
+                                            startActivity(intent)
+
+                                        } else {
+                                            Toast.makeText(
+                                                    this@MainActivity,
+                                                    " Password is Incorrect ",
+                                                    Toast.LENGTH_LONG
+                                            )
+                                                    .show()
+                                        }
+                                        isExist = true
+                                        break
 
                                     } else {
-                                        Toast.makeText(
-                                            this@MainActivity,
-                                            " Password is Incorrect ",
-                                            Toast.LENGTH_LONG
-                                        )
-                                            .show()
+                                        isExist = false
                                     }
-                                    isExist = true
-                                    break
+                                }
+
+                                if (isExist) {
+
+
+
 
                                 } else {
-                                    isExist = false
+
+                                    Toast.makeText(
+                                            this@MainActivity,
+                                            " User Not Registered ",
+                                            Toast.LENGTH_LONG
+                                    ).show()
                                 }
+
                             }
 
-                            if (isExist) {
-
-
-
-
-                            } else {
-
-                                Toast.makeText(
-                                    this@MainActivity,
-                                    " User Not Registered ",
-                                    Toast.LENGTH_LONG
-                                ).show()
-                            }
-
-                        }
-
-                    })
+                        })
 
 
 
@@ -107,6 +106,6 @@ class MainActivity : AppCompatActivity() {
         }
         return true
     }
-    }
+}
 
 
