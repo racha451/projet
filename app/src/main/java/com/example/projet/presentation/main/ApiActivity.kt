@@ -106,10 +106,6 @@ class ApiActivity : AppCompatActivity() {
 
 
         }
-        btn_api11.setOnClickListener {
-            val intent = Intent(this, SingleCompany::class.java)
-            intent.putExtra("id",300)
-            this.startActivity(intent)
-        }
+
        }}
 

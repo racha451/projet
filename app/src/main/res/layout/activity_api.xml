@@ -112,15 +112,6 @@
             android:text="Company with id 70" />
 
 
-        <Button
-            android:id="@+id/btn_api11"
-            android:layout_width="match_parent"
-            android:layout_height="35dp"
-            android:layout_marginTop="0dp"
-            android:text="Company with id 45" />
-
-
-
 
 
 

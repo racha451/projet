@@ -20,21 +20,18 @@
         android:padding="50dp"
         tools:context=".presentation.main.MainActivity">
 
-        <ImageView
-            android:id="@+id/ee"
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:src="@drawable/ee" />
+
 
         <TextView
             android:layout_marginTop="30dp"
             android:id="@+id/description"
             android:layout_width="wrap_content"
-            android:layout_height="150dp"
-            android:text="Description de l'api: l'application permet d'acceder aux element de l'api Rest
-            qui comportent les informations des entreprises productrice de films. L'api permet l'accées aux element uniquement par ID "
+            android:layout_height="250dp"
+            android:text="Description: l'application permet d'accéder aux éléments de l'api Rest
+qui comporte des entreprises productrices de films et des informations les concernant.
+L'api Rest utilisée ne permet d’accéder à ses éléments que à partir de leur ID, le script Json des entreprises comporte des informations concernant une entreprise unique, mais l’accès à la liste peut se faire par élément"
             android:textStyle="bold"
-            android:textSize="18sp"/>
+            android:textSize="15sp"/>
 
 
 
@@ -44,9 +41,9 @@
         <Button
             android:id="@+id/btnre"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="35dp"
 
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="50dp"
             android:text="Passer à l'api rest" />
 
 
