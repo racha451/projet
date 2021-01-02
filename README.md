@@ -18,5 +18,5 @@ architecture: MVVM
 Langage: Kotlin
 base de données :ROOM pour l'authentification et retrofit pour l'Api
 
-Des modification ont été faites le 2Janvier afin d'améliorer le design et d'afficher plusieurs élements de l'API au lieu d'un seul 
+Des modification ont été faites le 2 Janvier afin d'améliorer le design et d'afficher plusieurs élements de l'API au lieu d'un seul 
 
