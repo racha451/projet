@@ -20,3 +20,5 @@ base de données :ROOM pour l'authentification et retrofit pour l'Api
 
 Des modification ont été faites le 2 Janvier afin d'améliorer le design et d'afficher plusieurs élements de l'API au lieu d'un seul 
 
+![image](https://user-images.githubusercontent.com/75430382/103449744-57139b80-4c8b-11eb-9053-32e586dc9b1b.png)
+
