@@ -13,8 +13,7 @@ L'api Rest contient les entreprises productrices de film,  l'accès à  l'Api ne
 Dans notre cas nous avons fait appel et ensuite affiché les elements de l'API par leur ID
 
 Le lien pour acceder aux compagnies est:https://api.themoviedb.org/3/company/id?api_key=67a80710810611d36586dcc9328b2aa0
-
-id doit etre remplacé par un entier 
+ 
 
 architecture: MVVM
 Langage: Kotlin
