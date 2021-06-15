@@ -30,7 +30,7 @@ Des modification ont été faites afin d'améliorer le design et d'afficher plus
 
 ![image](https://user-images.githubusercontent.com/75430382/103449761-9215cf00-4c8b-11eb-9f47-31a3e76f3496.png)
 
-Accés aux infos des company
+Accés aux infos des entreprises
 
 
 ![image](https://user-images.githubusercontent.com/75430382/103449842-ad350e80-4c8c-11eb-954a-925da352b359.png)
